@@ -30,7 +30,7 @@ Aber aktuell, nach einer
 ersten Impact-Analyse in Bezug auf das "joinStatement", sieht es so
 aus, dass dessen Funktionalität nur via
 [com.affichage.persistence.rest.service](https://fisheye.apgsga.ch/browse/~br=it21_release_9_0_1_rad_2_admin/JAVA_CVS/com.affichage.persistence.rest.service),
-angewendet wird. 
+angewendet wird und deshalb für das Ibus Service Scenario nicht zum tragen kommt.
 
 Das "tableAliasName" scheint neu gemäss einer Konvention generiert
 werden.
