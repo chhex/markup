@@ -32,7 +32,7 @@ aus, dass dessen Funktionalität nur via
 [com.affichage.persistence.rest.service](https://fisheye.apgsga.ch/browse/~br=it21_release_9_0_1_rad_2_admin/JAVA_CVS/com.affichage.persistence.rest.service),
 angewendet wird und deshalb für das Ibus Service Scenario nicht zum tragen kommt.
 
-Das "tableAliasName" scheint neu gemäss einer Konvention generiert
+Das "tableAliasName" scheint neu gemäss einer Konvention generiert und ist somit auch obsolet. 
 werden.
 
 Auch sollte um zu einem abschliessende Aussage der Differenzen zu
