@@ -261,22 +261,17 @@ TODO
 Beispiele für Code, welcher nicht im It21 Ui Stand generiert wird
 
 `getPersistenceMetaInfo().addTableAliasName(BEAN_DESC, "AWF");
+	
 getPersistenceMetaInfo().addJoinStatement( BEAN_DESC.getProperty(
 com.affichage.it21.vk.adressliste.excel.dao.AdresslisteWertF.ADRESSLISTE_WERT_ID_F),
 " JOIN ADRESSLISTE_WERT_ID_F AWIF ON (AWIF.ADRW_ID = AWF.ADRW_ID) ");`
 
 
-Im Model :
+Im Model zb:
 
 `	entity AdresslisteWertF (id=(adrwId)) { oneToMany AdresslisteWertIdF
 adresslisteWertIdF (joinColumns=ADRW_ID referencedColumns=ADRW_ID )`
 
-bzw
-
-`readOnly entity ReportcallF ( id=(repcId) tableAlias="RC" ) {
-		oneToMany ReportparamF parameter (joinColumns = REPC_ID)
-		oneToMany RBegleitzettelMainF report (joinColumns = REPC_ID)
-	}`
 
 Das API PersistenceMetaInfo ist aber bei beiden Ständen gleich und
 unterstützen "joinStatement" und "tableAliasName"
