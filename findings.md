@@ -18,7 +18,7 @@ Der Generator von IT21 Ui generiert ein paar Runtime Metadaten (
 "joinStatement", "tableAliasName"), welche mit dem Ibus Service Stand
 generiert wird, nicht. Diese Metadaten werden bei der Sql Generierung
 verwendet, dort wo via SqlCriteriaExpressionQueryConfig Qcel Dsl
-basierte Datenbankabfrage generiert werden.
+basierte Datenbankabfragen generiert werden.
 
 Interessant ist, dass das Persistence API für die MetaDaten in beiden
 Ständen synchron ist.
@@ -27,10 +27,10 @@ Der effektive Impact dieser nicht unterstützten MetaDaten, ist noch
 nicht völlig klar und Bedarf weitere Analyse.
 
 Aber aktuell, nach einer
-ersten Impact-Analyse in Bezug das "joinStatement", sieht es aber so
-aus, dass dieses Scenario nur via
+ersten Impact-Analyse in Bezug auf das "joinStatement", sieht es so
+aus, dass dessen Funktionalität nur via
 [com.affichage.persistence.rest.service](https://fisheye.apgsga.ch/browse/~br=it21_release_9_0_1_rad_2_admin/JAVA_CVS/com.affichage.persistence.rest.service),
-verwendet wird.
+angewendet wird. 
 
 Das "tableAliasName" scheint neu gemäss einer Konvention generiert
 werden.
